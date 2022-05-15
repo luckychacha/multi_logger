@@ -10,7 +10,7 @@ import Option "mo:base/Option";
 import Logger "mo:ic-logger/Logger";
 import Cycles "mo:base/ExperimentalCycles";
 
-shared(msg) actor class TextLogger() {
+shared(msg) actor class SingleLogger() {
   let OWNER = msg.caller;
 
   stable var state : Logger.State<Text> = Logger.new<Text>(0, null);
