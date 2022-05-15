@@ -1,0 +1,35 @@
+{
+  "canisters": {
+    "multi_logger": {
+      "main": "src/multi_logger/main.mo",
+      "type": "motoko"
+    },
+    "multi_logger_assets": {
+      "dependencies": [
+        "multi_logger"
+      ],
+      "frontend": {
+        "entrypoint": "src/multi_logger_assets/src/index.html"
+      },
+      "source": [
+        "src/multi_logger_assets/assets",
+        "dist/multi_logger_assets/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "dfx": "0.8.4",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}
