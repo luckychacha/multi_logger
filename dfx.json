@@ -1,7 +1,7 @@
 {
   "canisters": {
     "multi_logger": {
-      "main": "src/multi_logger/main.mo",
+      "main": "src/multi_logger/MultiLogger.mo",
       "type": "motoko"
     },
     "multi_logger_assets": {
@@ -20,8 +20,7 @@
   },
   "defaults": {
     "build": {
-      "args": "",
-      "packtool": ""
+      "packtool": "vessel sources"
     }
   },
   "dfx": "0.8.4",
